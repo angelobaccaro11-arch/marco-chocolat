@@ -9,111 +9,106 @@
   <style>
     * {
       box-sizing: border-box;
-      margin: 0;
-      padding: 0;
     }
 
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      background: #f5eadb;
+      background: #f5eee7;
       color: #3b2115;
       text-align: center;
     }
 
     header {
-      background: #4b2618;
-      color: white;
-      padding: 20px;
+      background: #4b2415;
+      padding: 25px 15px;
     }
 
     header h1 {
-      font-size: 24px;
-    }
-
-    .container {
-      max-width: 850px;
-      margin: auto;
-      padding: 40px 20px;
+      color: white;
+      margin: 0;
+      font-size: 32px;
     }
 
     .cover {
-      width: 330px;
-      max-width: 90%;
+      padding: 30px 15px;
+    }
+
+    .cover img {
+      width: 100%;
+      max-width: 450px;
+      height: auto;
       border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-      margin-bottom: 40px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
     }
 
-    .resume {
-      background: white;
-      padding: 30px;
-      border-radius: 18px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-      margin-bottom: 40px;
+    .summary {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
     }
 
-    .resume h2 {
-      font-size: 30px;
-      margin-bottom: 20px;
-      color: #4b2618;
+    .summary h2 {
+      font-size: 28px;
+      color: #5a2d18;
     }
 
-    .resume p {
-      font-size: 19px;
-      line-height: 1.7;
-    }
-
-    .notification {
-      background: #7b3f21;
-      color: white;
-      padding: 35px 25px;
-      border-radius: 20px;
-      margin-bottom: 30px;
-    }
-
-    .notification h2 {
-      font-size: 27px;
-      margin-bottom: 15px;
-    }
-
-    .notification p {
+    .summary p {
       font-size: 18px;
       line-height: 1.6;
-      margin-bottom: 25px;
+    }
+
+    .email-section {
+      background: #6b351d;
+      color: white;
+      padding: 35px 20px;
+      margin-top: 20px;
+    }
+
+    .email-section h2 {
+      margin-top: 0;
+    }
+
+    .email-section p {
+      font-size: 17px;
+      line-height: 1.5;
     }
 
     .email-button {
       display: inline-block;
+      margin-top: 15px;
+      padding: 14px 24px;
       background: white;
-      color: #7b3f21;
-      padding: 15px 28px;
-      border-radius: 30px;
+      color: #5a2d18;
       text-decoration: none;
       font-weight: bold;
+      border-radius: 8px;
       font-size: 17px;
+      transition: 0.2s;
     }
 
     .email-button:hover {
       transform: scale(1.05);
+      background: #f3e2d2;
     }
 
     footer {
-      background: #4b2618;
-      color: white;
-      padding: 25px;
+      padding: 20px;
+      font-size: 14px;
+      color: #6b5144;
     }
 
     @media (max-width: 600px) {
       header h1 {
-        font-size: 19px;
+        font-size: 25px;
       }
 
-      .cover {
-        width: 270px;
+      .summary h2 {
+        font-size: 23px;
       }
 
-      .resume p {
-        font-size: 17px;
+      .summary p {
+        font-size: 16px;
       }
     }
   </style>
@@ -122,51 +117,46 @@
 <body>
 
   <header>
-    <h1>🍫 Marco et le Mystère du Chocolat Remonte-Temps</h1>
+    <h1>Marco et le Mystère du Chocolat Remonte-Temps</h1>
   </header>
 
-  <main class="container">
-
-    <!-- COUVERTURE DU ROMAN -->
+  <section class="cover">
     <img
       src="KDP_FINAL_Nina_Blonde_Theo_Asiat_300p.jpg"
-      alt="Couverture du roman Marco et le Mystère du Chocolat Remonte-Temps"
-      class="cover"
+      alt="Couverture de Marco et le Mystère du Chocolat Remonte-Temps"
     >
+  </section>
 
-    <!-- RÉSUMÉ -->
-    <section class="resume">
-      <h2>Le résumé</h2>
+  <section class="summary">
+    <h2>📖 Le résumé</h2>
 
-      <p>
-        À Zermatt, Marco Zorrino découvre un mystérieux secret
-        laissé par son grand-père Léo. Avec ses amis Nina et Théo,
-        il part à la recherche de réponses, sans se douter que
-        le secret est bien plus mystérieux qu’il ne l’imagine.
-      </p>
-    </section>
+    <p>
+      À Zermatt, Marco Zorrino découvre un mystérieux secret laissé par son
+      grand-père Léo. Avec ses amis Nina et Théo, il part à la recherche de
+      réponses, sans se douter que le secret est bien plus mystérieux qu’il
+      ne l’imagine.
+    </p>
+  </section>
 
-    <!-- ÊTRE PRÉVENU -->
-    <section class="notification">
-      <h2>Tu aimes mon livre ? 🍫</h2>
+  <section class="email-section">
+    <h2>🍫 Tu aimes mon livre ?</h2>
 
-      <p>
-        Quand mon livre sera publié, je te préviendrai !
-        Envoie-moi un mail pour que je puisse te prévenir.
-      </p>
+    <p>
+      Quand mon livre sera publié, je te préviendrai !
+      Envoie-moi un mail pour que je puisse te prévenir.
+    </p>
 
-      <a
-        class="email-button"
-        href="mailto:angelobaccaro11@gmail.com?subject=Publication de Marco et le Mystère du Chocolat Remonte-Temps"
-      >
-        📧 Préviens-moi !
-      </a>
-    </section>
-
-  </main>
+    <a
+      class="email-button"
+      href="https://mail.google.com/mail/?view=cm&fs=1&to=angelobaccaro11@gmail.com&su=Publication%20de%20Marco%20et%20le%20Myst%C3%A8re%20du%20Chocolat%20Remonte-Temps"
+      target="_blank"
+    >
+      📧 Envoie-moi un mail
+    </a>
+  </section>
 
   <footer>
-    © 2026 — Marco et le Mystère du Chocolat Remonte-Temps
+    © 2026 — Marco et le Mystère du Chocolat Remonte-Temps 🍫📖
   </footer>
 
 </body>
