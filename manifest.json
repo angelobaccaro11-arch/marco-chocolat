@@ -1,0 +1,13 @@
+{
+  "background_color": "#f5e7e9",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Marco et le Mystère du Chocolat Remonte-Temps",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Marco Chocolat",
+  "start_url": "/",
+  "theme_color": "#4b2415",
+  "id": "marco-chocolat",
+  "description": "L'application officielle du roman Marco et le Mystère du Chocolat Remonte-Temps."
+}
